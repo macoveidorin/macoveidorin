@@ -23,6 +23,10 @@ git commit -m "am adaugat feature"
 
 git push origin nume-branch
 
+
+flutter build appbundle --release --dart-define-from-file=env.json
+flutter build apk --release --dart-define-from-file=env.json
+
 <!--
 **macoveidorin/macoveidorin** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
