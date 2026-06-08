@@ -25,7 +25,20 @@ git push origin nume-branch
 
 
 flutter build appbundle --release --dart-define-from-file=env.json
+
 flutter build apk --release --dart-define-from-file=env.json
+
+Pași de activare a CAPTCHA (opțional, când vrei protecția maximă)
+
+Supabase Dashboard → Authentication → Settings → Enable CAPTCHA protection → alege Cloudflare Turnstile, pune Secret Key.
+
+Cloudflare → creează un site Turnstile, ia Site Key.
+
+Build cu cheia: adaugă în env.json linia "TURNSTILE_SITE_KEY": "0x4AAA..." (folosit deja cu --dart-define-from-file=env.json).
+
+(Opțional) înăsprește limitele din Authentication → Rate Limits.
+
+Notă: și fără CAPTCHA, Straturile 1+2 plus rate-limit-urile native Supabase Auth (per IP) oferă protecție imediată.
 
 <!--
 **macoveidorin/macoveidorin** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
