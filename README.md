@@ -164,3 +164,8 @@ Slide	Nume fișier	Slide	Nume fișier
 11	snppc_sl11_documents.png*	20	snppc_sl20_foundation.png
 12	snppc_sl12_aid.png		
 *Pentru slide-urile cu video (8, 10, 11, 13), dă-mi și un cadru-poster .png (Canva nu importă fidel video din .pptx) — pun poster-ul în slide, iar tu tragi peste el clipul real în Canva.
+
+
+
+py tools/build_canva_pptx.py --format mobile --media assets/prezentare
+py tools/build_canva_pptx.py --format wide   --media assets/prezentare
