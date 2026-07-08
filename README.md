@@ -145,3 +145,22 @@ Here are some ideas to get you started:
 - 😄 Pronouns: ...
 - ⚡ Fun fact: ...
 -->
+
+
+
+Momentan, fiecare slide care așteaptă media are un placeholder marcat cu numele fișierului exact + eticheta „IMAGINE" sau „🎬 VIDEO". Am creat și generatorul build_canva_pptx.py, astfel încât să pot insera automat capturile reale și să regenerez fișierul.
+
+Cum îmi dai media (2 opțiuni)
+Opțiunea A — auto-embed (recomandat): pune fișierele într-un folder și dă-mi calea. Ideal, redenumite exact așa (eu le inserez și regenerez .pptx-ul):
+
+Slide	Nume fișier	Slide	Nume fișier
+1	snppc_sl01_home-hero.png	13	snppc_sl13_voting.png*
+4	snppc_sl04_home-grid.png	14	snppc_sl14_notifications.png
+6	snppc_sl06_login.png	15	snppc_sl15_salary.png
+7	snppc_sl07_cnp-mask.png	16	snppc_sl16_news.png
+8	snppc_sl08_member-card.png	17	snppc_sl17_stats.png
+9	snppc_sl09_admin.png	18	snppc_sl18_offers.png
+10	snppc_sl10_membership.png*	19	snppc_sl19_profile.png
+11	snppc_sl11_documents.png*	20	snppc_sl20_foundation.png
+12	snppc_sl12_aid.png		
+*Pentru slide-urile cu video (8, 10, 11, 13), dă-mi și un cadru-poster .png (Canva nu importă fidel video din .pptx) — pun poster-ul în slide, iar tu tragi peste el clipul real în Canva.
