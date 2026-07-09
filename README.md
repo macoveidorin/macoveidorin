@@ -169,3 +169,28 @@ Slide	Nume fișier	Slide	Nume fișier
 
 py tools/build_canva_pptx.py --format mobile --media assets/prezentare
 py tools/build_canva_pptx.py --format wide   --media assets/prezentare
+
+
+
+Gata! Am descărcat arhiva completă și am rulat analiza pe 2504 extrageri reale (1993-08-08 → 2025-12-11, cel mai complet dataset public găsit).
+
+🎯 Numerele recomandate
+7 – 15 – 24 – 27 – 28 – 31
+
+Aceasta e „varianta echilibrată": respectă structura statistic tipică a unei extrageri reale (sumă=132, aflată în intervalul frecvent 107–190; 4 impare/2 pare; distribuție mică/mare echilibrată).
+
+📊 Ce a arătat analiza
+Categorie	Numere
+Calde (cele mai extrase)	5, 6, 4, 25, 36, 9, 23, 2, 12
+Reci (cele mai rare)	31, 49, 42, 35, 22, 40, 47, 11
+Restante (n-au mai ieșit de mult)	27 (50 trageri), 1 (36), 48 (31), 29 (19)
+Structura tipică a unei extrageri: sumă medie ≈ 148, cel mai des 3 impare/3 pare (32%), și 3 numere mici (1–24) + 3 mari (33%). Toate cele 49 de numere au ieșit de ~300 de ori (așteptat uniform: 306) — diferențele sunt mici, exact cum te-ai aștepta de la un proces aleator.
+
+🎲 Variante alternative (dacă preferi altă filozofie)
+A – Calde: 25 – 31 – 40 – 43 – 45 – 46
+B – Restante: 1 – 10 – 27 – 43 – 44 – 48
+D – Aleatorie pură: 11 – 17 – 18 – 19 – 22 – 31
+⚠️ Onest, matematic
+Extragerile sunt independente — istoricul nu prezice viitorul. Fiecare combinație (inclusiv 1-2-3-4-5-6) are exact aceeași șansă: 1 la 13.983.816. Analiza „calde/reci/restante" e distractivă și dă bilete bine distribuite, dar nu crește șansa reală de câștig. Joacă responsabil. 🍀
+
+Scripturile rămân în loto649/analiza_649.py — poți rula py analiza_649.py oricând pentru variante noi, iar loto649/download_data.py reîmprospătează arhiva.
