@@ -194,3 +194,20 @@ D – Aleatorie pură: 11 – 17 – 18 – 19 – 22 – 31
 Extragerile sunt independente — istoricul nu prezice viitorul. Fiecare combinație (inclusiv 1-2-3-4-5-6) are exact aceeași șansă: 1 la 13.983.816. Analiza „calde/reci/restante" e distractivă și dă bilete bine distribuite, dar nu crește șansa reală de câștig. Joacă responsabil. 🍀
 
 Scripturile rămân în loto649/analiza_649.py — poți rula py analiza_649.py oricând pentru variante noi, iar loto649/download_data.py reîmprospătează arhiva.
+
+Ce certificate trebuie să obții (când ai cont Apple Developer)
+Apple Developer Program (99 $/an).
+În Certificates, Identifiers & Profiles → Identifiers → creezi un Pass Type ID (ex. pass.ro.snppc.membercard).
+Generezi certificatul Pass Type ID și îl exporți ca .p12 (cu parolă) din Keychain.
+Descarci certificatul intermediar Apple WWDR (G4) în format PEM.
+Apoi setezi secretele în Supabase:
+supabase secrets set APPLE_PASS_TYPE_ID=pass.ro.snppc.membercard
+supabase secrets set APPLE_TEAM_ID=<TEAM_ID_10_caractere>
+supabase secrets set APPLE_PASS_CERT_P12_BASE64=<base64_al_fisierului.p12>
+supabase secrets set APPLE_PASS_CERT_PASSWORD=<parola_p12>
+supabase secrets set APPLE_WWDR_CERT_PEM="<PEM_cu_\n>"
+(opțional APPLE_PASS_ICON_URL / APPLE_PASS_LOGO_URL; implicit folosesc logo-ul deja configurat pentru Google).
+
+După supabase functions deploy wallet-pass, butonul de pe iOS va funcționa automat — fără alte modificări de cod.
+
+
